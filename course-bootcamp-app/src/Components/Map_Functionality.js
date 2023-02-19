@@ -7,7 +7,7 @@ export default function Map_Functionality() {
 
     //to process this from the map function
     const squared  = nums.map(function (items){
-        return items * items;
+        return items * items; 
     })
 
     const capArr = names.map(function(items){
