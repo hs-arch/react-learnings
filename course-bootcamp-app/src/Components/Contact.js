@@ -1,4 +1,5 @@
 import React from "react";
+// import pic1 from "../"
 // import b1 from '.././Images/pexels-daniel-217872.jpg';
 // import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
@@ -11,10 +12,11 @@ export default function Contact(data){
     // Instead of accesssing the values as data.name and data.position.
     // This is the concept of destructing props.
 
-    const {name,position,YOE} = data;
+    const {name,position,YOE,image} = data;
     console.log("1",name);
     console.log("2",position);
     console.log("3",YOE);
+    //console/log("4",image);
     // hence if i want to do a destructing call in props i could also do it this way for the "Contact" declaration, instead of passing "data", pass the destructing props like below.
     
     // export default function Contact({name, position}}){
@@ -22,18 +24,19 @@ export default function Contact(data){
     // Destructing props ends here.
 
     return(
+        <div className="conatiner">
+            <div className="card">
 
-        <div className="card">
-            {/* <img src="" alt="Avatar" style="width:100%" /> */}
-            
-            <div className="container">
-                <h4><b>Name : {data.name}</b></h4>
-                {/* Below line is a conditional rendering of the <p> tag . The below p tage will onlly render if the value in data.position is present.
-                If the data is not present the <p> tagg will not render for that particular call of <Contact /> from HamnidApp.js */}
-                {data.position && <p>Designation : {data.position}</p>}
-                <p>Experience : {data.YOE}</p>
+                {data.image && <img src={data.image}/>}
+
+                <div className="name"> 
+                    <h4><b>Name : {data.name}</b></h4>
+                    {/* Below line is a conditional rendering of the <p> tag . The below p tage will onlly render if the value in data.position is present.
+                    If the data is not present the <p> tagg will not render for that particular call of <Contact /> from HamnidApp.js */}
+                    {data.position && <p>Designation : {data.position}</p>}
+                    <p>Experience : {data.YOE}</p>
+                </div>
             </div>
-
         </div>
 
 // <div className = "contact-card">
