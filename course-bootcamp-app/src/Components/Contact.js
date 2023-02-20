@@ -30,11 +30,11 @@ export default function Contact(data){
                 {data.image && <img src={data.image}/>}
 
                 <div className="name"> 
-                    <h4><b>Name : {data.name}</b></h4>
+                    {data.name && <h4><b>Name : {data.name}</b></h4>}
                     {/* Below line is a conditional rendering of the <p> tag . The below p tage will onlly render if the value in data.position is present.
                     If the data is not present the <p> tagg will not render for that particular call of <Contact /> from HamnidApp.js */}
                     {data.position && <p>Designation : {data.position}</p>}
-                    <p>Experience : {data.YOE}</p>
+                    {data.YOE && <p>Experience : {data.YOE}</p>}
                 </div>
             </div>
         </div>
