@@ -24,7 +24,7 @@ function HamidApp() {
 
   console.log(movie_posters);
 
-  debugger;
+  // debugger;
   return (
     <div className="HamidApp">
       {/* Hello from course after main app change again . */}
