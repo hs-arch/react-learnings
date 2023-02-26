@@ -1,5 +1,5 @@
 body{
-  background-color: #060d17;
+  /* background-color: #060d17; */
 }
 
 img{
@@ -11,6 +11,10 @@ img{
   /* margin: 0 auto; */
 }
 
+.output--div{
+  background-color: aqua;
+}
+
 .container{
   /* position: relative; */
   /* display: flex; */
@@ -18,6 +22,7 @@ img{
   background-color: rgb(27, 170, 39);
   /* margin: 0 auto;  */
   margin-top: 20vh;
+  /* display: flex; */
 }
 
 .card{
@@ -38,7 +43,7 @@ img{
 }
 
 #header-container{
-  color: white;
+  /* color: white; */
   font-family: "consolas"; 
 }
 
@@ -49,6 +54,15 @@ img{
 
 .name{
   color: white;
+}
+
+.FormContainer{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button--div{
+  margin-top: 20px;
 }
 
 /* .card {

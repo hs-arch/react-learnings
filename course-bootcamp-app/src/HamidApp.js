@@ -14,6 +14,13 @@ import Map_Functionality from './Components/Map_Functionality';
 
 import moviesData from './Data/MoviesData.json';
 import Header from './Components/Header';
+import FormDa from './Components_handlingEvents/Form';
+import UseState_Implementation from './Components_handlingEvents/UseState_Implementation';
+import ComplexState from './Components_handlingEvents/ComplexState';
+import UsingObjectInState from './Components_handlingEvents/UsingObjectsInState';
+import Body from './PassingDataAroundComponents/Body';
+import MainForm from './FormsPractice/MainForm';
+import NoobApiCalls from './API/MakingNoobAPICalls';
 
 function HamidApp() {
   // const img1 = "https://image.tmdb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg";
@@ -22,18 +29,31 @@ function HamidApp() {
       return items.poster;
   })
 
-  console.log(movie_posters);
+  // console.log(movie_posters);
 
   // debugger;
   return (
     <div className="HamidApp">
+
+      <NoobApiCalls />
+
+      {/* <FormDa /> */}
+      {/* <UseState_Implementation /> */}
+
+      {/* <ComplexState /> */}
+      {/* <UsingObjectInState /> */}
+
+      {/* <Body /> */}
+
+      {/* <MainForm /> */}
+
       {/* Hello from course after main app change again . */}
       {/* <Nav />
       <Main /> */}
 
       {/* <Map_Functionality /> */}
-      <Header />
-      <Contact name="John Doe" position="Architect" YOE={15} image={movie_posters[0]}/>
+      {/* <Header /> */}
+      {/* <Contact name="John Doe" position="Architect" YOE={15} image={movie_posters[0]}/>
       <Contact name="Hamid Sarfaraz" position="TDP" YOE={1} image={movie_posters[1]}/>
       <Contact name="Mayank Dwivedi" position="Manager" YOE={13} image={movie_posters[2]}/>
       <Contact name="Gupta Milan" position="SDE" YOE={10} image={movie_posters[3]}/>
@@ -42,9 +62,8 @@ function HamidApp() {
       <Contact name="New Comer"  position="" YOE={0} image={movie_posters[6]}/>
       <Contact name="New Comer"  position="" YOE={0} image={movie_posters[7]}/>
       <Contact name="New Comer"  position="" YOE={0} image={movie_posters[8]}/>
-      <Contact name="New Comer"  position="" YOE={0} image={movie_posters[9]}/>
-
-      
+      <Contact name="New Comer"  position="" YOE={0} image={movie_posters[9]}/> */}
+  
       
 
       {/* <Contact image={movie_posters[0]}/>
